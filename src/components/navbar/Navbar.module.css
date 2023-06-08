@@ -12,7 +12,7 @@
   height: 90px;
   padding: 0 100px;
   background: #f1f7fc;
-  background: #8eaeba;
+  /* background: #8eaeba; */
   box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1);
   transition: background-color 300ms ease-in-out;
   z-index: 999;
@@ -21,7 +21,7 @@
 .div header.scrolled {
   width: 100vw;
   display: flex;
-  background-color: #ffffff;
+  background: #8eaeba;
   box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -35,12 +35,15 @@
   margin: 0;
 }
 .menu li {
-  color: #2a2d46;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
   font-weight: 500;
   border-bottom: none;
   transition: color 300ms ease-in-out;
   cursor: pointer;
+  text-transform: uppercase;
+  line-height: 70px;
 }
 
 .menu a.active {
@@ -77,9 +80,10 @@
   font-size: 16px;
   line-height: 20px;
 }
-/* .activeLink {
-  color: #52dae7 !important;
-} */
+.logo {
+  width: 50px;
+  height: 50px;
+}
 @media (max-width: 768px) {
   .div header {
     max-width: 768px;
