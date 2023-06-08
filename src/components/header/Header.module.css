@@ -1,0 +1,21 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.main video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
