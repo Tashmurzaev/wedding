@@ -11,11 +11,10 @@
   align-items: center;
   height: 90px;
   padding: 0 100px;
-  /* background: #f1f7fc; */
-  /* background: #8eaeba; */
   box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1);
   transition: background-color 300ms ease-in-out;
   z-index: 999;
+  color: #73777b;
 }
 
 .div header.scrolled {
@@ -23,6 +22,7 @@
   display: flex;
   background: #8eaeba;
   box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1);
+  color: #fff;
 }
 
 .menu {
@@ -36,8 +36,8 @@
 }
 .menu li {
   font-size: 1.1rem;
-  color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
+  font-family: "Playfair Display";
   font-weight: 500;
   border-bottom: none;
   transition: color 300ms ease-in-out;

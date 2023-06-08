@@ -1,14 +1,18 @@
 import React from "react";
 import styles from "./Header.module.css";
-import video from "../../assets/video/videoCompress.mp4";
+import video from "../../assets/video/video3.mp4";
+import headerIcon from "../../assets/icons/headerIcon.svg";
 
 const Header = () => {
   return (
     <main className={styles.main}>
       <video className={styles.main} src={video} autoPlay loop muted />
       <div className={styles.content}>
-        <h1>Isabella & Andrew</h1>
-        <p>Are getting Married in Event Started!</p>
+        <img className={styles.icon2} src={headerIcon} alt="icon" />
+        <h1>Kurapika & Alluka</h1>
+        <img className={styles.icon} src={headerIcon} alt="icon" />
+        <p>Are getting Married</p>
+        <span> in Event Started!</span>
       </div>
     </main>
   );
