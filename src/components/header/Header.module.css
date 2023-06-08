@@ -7,6 +7,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  /* opacity: 0.3; */
 }
 .content {
   position: absolute;
@@ -17,5 +18,34 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: black;
+}
+.content h1 {
+  font-size: 7rem;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  color: #8eaeba;
+  line-height: 40px;
+  color: #fff;
+}
+
+.content p {
+  font-size: 1.5rem;
+  font-family: "Playfair Display";
+  font-style: italic;
+  color: #8eaeba;
+  line-height: 30px;
+  color: #fff;
+}
+.content span {
+  font-size: 2rem;
+  color: #8eaeba;
+  line-height: 30px;
+  color: #fff;
+}
+.icon2 {
+  width: 300px;
+}
+.icon {
+  width: 300px;
+  transform: rotate(180deg);
 }
