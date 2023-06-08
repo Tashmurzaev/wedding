@@ -49,13 +49,13 @@ const Navbar = ({ scroll }) => {
                 onClick={() => scroll("component2")}
                 className={styles.navMenu}
               >
-                About
+                The wedding
               </li>
               <li
                 onClick={() => scroll("component3")}
                 className={styles.navMenu}
               >
-                Contacts
+                gallery
               </li>
               <li
                 className={styles.navMenu}
@@ -67,7 +67,7 @@ const Navbar = ({ scroll }) => {
                 className={styles.navMenu}
                 onClick={() => scroll("component5")}
               >
-                Photos
+                contacts
               </li>
             </ul>
           </nav>
