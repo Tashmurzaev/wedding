@@ -2,13 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Poppins:wght@400;500;600&display=swap");
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Poppins", "Playfair Display", "Roboto", "Oxygen", "Ubuntu",
     "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #8eaeba;
   background: #f1f7fc;
-  background-color: white;
+  font-size: 14px;
+  
 }
 
 code {

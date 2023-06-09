@@ -9,7 +9,9 @@ const Header = () => {
       <video className={styles.main} src={video} autoPlay loop muted />
       <div className={styles.content}>
         <img className={styles.icon2} src={headerIcon} alt="icon" />
-        <h1>Kurapika & Alluka</h1>
+        <h1>
+          Kurapika <span>&</span> Alluka
+        </h1>
         <img className={styles.icon} src={headerIcon} alt="icon" />
         <p>Are getting Married</p>
         <span> in Event Started!</span>

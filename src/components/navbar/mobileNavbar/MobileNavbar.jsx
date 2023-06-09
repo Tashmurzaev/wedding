@@ -11,7 +11,7 @@ export const MobileNavbar = ({ openHandler, closeHandler, scroll }) => {
     closeHandler();
   };
   return (
-    <div style={{ color: "white" }}>
+    <div>
       <ModalWindow
         onClose={modalHandler}
         open={isModal}

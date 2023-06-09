@@ -1,5 +1,5 @@
 .div header {
-  width: 100vw;
+  /* width: 100vw; */
   margin: 0 auto;
   font-size: 1.15rem;
   position: fixed;
@@ -15,10 +15,11 @@
   transition: background-color 300ms ease-in-out;
   z-index: 999;
   color: #73777b;
+  color: #668a98;
 }
 
 .div header.scrolled {
-  width: 100vw;
+  /* width: 100vw; */
   display: flex;
   background: #8eaeba;
   box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1);
@@ -86,7 +87,7 @@
 }
 @media (max-width: 768px) {
   .div header {
-    max-width: 768px;
+    /* width: 100%; */
     padding: 0 16px;
     justify-content: space-between;
     transition: height 300ms ease-in-out;
@@ -125,7 +126,7 @@
     margin-top: 5px;
     -webkit-transition: 0.5s all;
     transition: 0.5s all;
-    background-color: #000000;
+    background-color: #668a98;
     border-radius: 3px;
   }
   .burger .shortLine {
@@ -134,7 +135,7 @@
     width: 21px;
     -webkit-transition: 0.5s all;
     transition: 0.5s all;
-    background: #000000;
+    background-color: #668a98;
     border-radius: 3px;
     margin-left: 5px;
   }

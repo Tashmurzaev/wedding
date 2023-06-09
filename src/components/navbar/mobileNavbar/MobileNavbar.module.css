@@ -50,9 +50,10 @@
     width: 80%;
     position: fixed;
     right: 0;
+    top: 0;
     margin: 0;
     height: 100%;
-    background: #2d0d83;
+    background: #f1f7fc;
     z-index: 888;
     padding-top: 108px;
   }
@@ -72,7 +73,7 @@
     margin-top: 5px;
     -webkit-transition: 0.5s all;
     transition: 0.5s all;
-    background: #ffffff;
+    background-color: #668a98;
     border-radius: 3px;
   }
   .burger .shortLine {
@@ -121,9 +122,9 @@
   .links_title {
     margin-bottom: 18px;
   }
-}
-.modal {
-  background: #494747;
-  border-radius: 20px;
-  width: 90%;
+  /* .modal {
+    background: #494747;
+    border-radius: 20px;
+    width: 90%;
+  } */
 }
