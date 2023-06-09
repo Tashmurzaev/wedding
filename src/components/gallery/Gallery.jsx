@@ -7,10 +7,10 @@ import slide5 from "../../assets/img/gallery-img2.jpeg";
 import slide3 from "../../assets/img/gallery-img3.jpeg";
 import slide6 from "../../assets/img/gallery-img3.jpeg";
 
-const Gallery = () => {
+const Gallery = ({ refOf }) => {
   return (
-    <>
-      <div style={{ marginTop: "130px" }}>
+    <div>
+      <div ref={refOf} style={{ marginTop: "130px" }}>
         <h2 className={cl.title}>Wedding Gallery</h2>
       </div>
       <div className={cl.slider}>
@@ -59,7 +59,7 @@ const Gallery = () => {
           </div> */}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
