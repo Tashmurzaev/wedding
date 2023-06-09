@@ -31,6 +31,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 }
 .content h1 {
   width: 70%;
@@ -39,6 +40,7 @@
   font-weight: 400;
   color: #668a98;
   line-height: 40px;
+  margin: 20px 0;
 }
 .content h1 span {
   font-size: 3rem;

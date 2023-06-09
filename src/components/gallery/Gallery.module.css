@@ -11,8 +11,9 @@
   font-family: "Playfair Display", serif;
   color: #8eaeba;
   font-weight: 500;
-  margin-bottom: 130px;
+  margin-bottom: 10px;
 }
+
 .slider {
   height: 420px;
   margin: auto;
@@ -42,9 +43,6 @@
   display: flex;
   gap: 20px;
   width: calc(250px * 14);
-}
-.title {
-  margin-top: 130px;
 }
 .slide {
   height: 420px;
