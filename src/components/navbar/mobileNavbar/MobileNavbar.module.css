@@ -48,14 +48,13 @@
 @media (max-width: 768px) {
   .customModal {
     width: 80%;
-    position: fixed;
-    right: 0;
+    position: fixed !important;
+    right: 0 !important;
     top: 0;
     margin: 0;
     height: 100%;
     background: #f1f7fc;
     z-index: 888;
-    padding-top: 108px;
   }
 
   .burger {
@@ -114,17 +113,17 @@
   }
   .links_title p {
     font-weight: 500;
-    font-size: 16px;
-    color: rgb(0, 0, 0);
+    font-family: "Playfair Display";
+    font-size: 18px;
+    color: #668a98;
     line-height: 20px;
     letter-spacing: 0.02em;
   }
   .links_title {
     margin-bottom: 18px;
   }
-  /* .modal {
+  .modal {
     background: #494747;
-    border-radius: 20px;
     width: 90%;
-  } */
+  }
 }

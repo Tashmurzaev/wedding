@@ -1,5 +1,5 @@
 .div header {
-  /* width: 100vw; */
+  width: 100%;
   margin: 0 auto;
   font-size: 1.15rem;
   position: fixed;
@@ -9,8 +9,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 90px;
-  padding: 0 100px;
+  height: 80px;
+  padding: 0 120px;
   box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1);
   transition: background-color 300ms ease-in-out;
   z-index: 999;
@@ -128,6 +128,12 @@
     transition: 0.5s all;
     background-color: #668a98;
     border-radius: 3px;
+  }
+  .div header.scrolled .burger .shortLine {
+    background-color: #fff;
+  }
+  .div header.scrolled .burger span {
+    background-color: #fff;
   }
   .burger .shortLine {
     display: block;
