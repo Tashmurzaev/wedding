@@ -10,12 +10,12 @@ import icon from "../../assets/icons/titleIcon.svg";
 
 const Gallery = ({ refOf }) => {
   return (
-    <div>
+    <>
       <div ref={refOf} style={{ marginTop: "130px", marginBottom: "100px" }}>
         <h2 className={cl.title}>Wedding Gallery</h2>
         <img src={icon} alt="icon" />
       </div>
-      <div className={cl.slider}>
+      <section className={cl.slider}>
         <div className={cl.slideTrack}>
           <div className={cl.slide}>
             <img className={cl.img} src={slide1} alt="img" />
@@ -60,8 +60,8 @@ const Gallery = ({ refOf }) => {
             <img className={cl.img} src={slide7} alt="img" />
           </div> */}
         </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 };
 
