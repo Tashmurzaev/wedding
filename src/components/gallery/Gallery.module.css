@@ -6,13 +6,6 @@
     transform: translateX(calc(-220px * 7));
   }
 }
-.title {
-  font-size: 3rem;
-  font-family: "Playfair Display", serif;
-  color: #8eaeba;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
 
 .slider {
   height: 420px;
@@ -60,10 +53,6 @@
 }
 
 @media (max-width: 768px) {
-  .title {
-    margin-top: 80px;
-    margin-bottom: 40px;
-  }
   .slider {
     width: 100%;
     margin-top: 40px;

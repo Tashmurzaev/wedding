@@ -6,14 +6,13 @@ import slide2 from "../../assets/img/gallery-img2.jpeg";
 import slide5 from "../../assets/img/gallery-img2.jpeg";
 import slide3 from "../../assets/img/gallery-img3.jpeg";
 import slide6 from "../../assets/img/gallery-img3.jpeg";
-import icon from "../../assets/icons/titleIcon.svg";
+import Title from "../title/Title";
 
 const Gallery = ({ refOf }) => {
   return (
     <>
       <div ref={refOf} style={{ marginTop: "130px", marginBottom: "100px" }}>
-        <h2 className={cl.title}>Wedding Gallery</h2>
-        <img src={icon} alt="icon" />
+        <Title h2="Wedding Gallery" />
       </div>
       <section className={cl.slider}>
         <div className={cl.slideTrack}>
