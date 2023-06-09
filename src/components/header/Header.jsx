@@ -3,9 +3,9 @@ import styles from "./Header.module.css";
 import video from "../../assets/video/video3.mp4";
 import headerIcon from "../../assets/icons/headerIcon.svg";
 
-const Header = () => {
+const Header = ({ refOf }) => {
   return (
-    <main className={styles.main}>
+    <main ref={refOf} className={styles.main}>
       <video className={styles.main} src={video} autoPlay loop muted />
       <div className={styles.content}>
         <img className={styles.icon2} src={headerIcon} alt="icon" />
