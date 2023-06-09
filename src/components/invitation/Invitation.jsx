@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import cl from "./Invitation.module.css";
+import Title from "../title/Title";
 
 const Invitation = () => {
   return (
-    <div>Invitation</div>
-  )
-}
+    <section className={cl.container}>
+      <div className={cl.overlay} />
+      <Title style={{ color: "#fff" }} h2="Приглашение" />
+    </section>
+  );
+};
 
-export default Invitation
+export default Invitation;
