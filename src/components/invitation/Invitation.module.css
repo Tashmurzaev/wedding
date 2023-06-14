@@ -6,10 +6,15 @@
   -webkit-background-size: cover;
   background-size: cover;
   padding-top: 170px;
-  padding-bottom: 700px;
+  padding-bottom: 400px;
   position: relative;
   overflow: hidden;
   z-index: -3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
 }
 .overlay {
   width: 100%;
@@ -46,4 +51,24 @@
   border-style: solid;
   border-width: 0 0 130px 100vw;
   border-color: transparent transparent #f1f7fc transparent;
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  line-height: 62px;
+  text-align: center;
+  color: #fff;
+}
+.rightSide p {
+  font-size: 7rem;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  line-height: 60px;
+}
+.rightSide span {
+  display: block;
+  font-size: 1.5rem;
+  position: relative;
+  top: 15px;
 }
