@@ -1,0 +1,15 @@
+.title {
+  font-size: 3rem;
+  font-family: "Playfair Display", serif;
+  color: #8eaeba;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.cont {
+  align-self: center;
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+}

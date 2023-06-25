@@ -3,6 +3,7 @@ import "./App.css";
 import Gallery from "./components/gallery/Gallery";
 import Header from "./components/header/Header";
 import Navbar from "./components/navbar/Navbar";
+import Invitation from "./components/invitation/Invitation";
 
 function App() {
   const componentRefs = {
@@ -21,6 +22,7 @@ function App() {
       <Navbar scroll={scrollToComponent} />
       <Header refOf={componentRefs.component1} />
       <Gallery refOf={componentRefs.component2} />
+      <Invitation />
     </div>
   );
 }
