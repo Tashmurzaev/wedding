@@ -4,6 +4,7 @@ import Gallery from "./components/gallery/Gallery";
 import Header from "./components/header/Header";
 import Navbar from "./components/navbar/Navbar";
 import Invitation from "./components/invitation/Invitation";
+// import Location from "./components/location/Location";
 
 function App() {
   const componentRefs = {
@@ -23,6 +24,7 @@ function App() {
       <Header refOf={componentRefs.component1} />
       <Gallery refOf={componentRefs.component2} />
       <Invitation />
+      {/* <Location /> */}
     </div>
   );
 }

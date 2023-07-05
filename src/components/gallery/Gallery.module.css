@@ -8,7 +8,8 @@
 }
 
 .slider {
-  height: 420px;
+  height: 520px;
+  width: 530px;
   margin: auto;
   overflow: hidden;
   position: relative;
@@ -17,8 +18,8 @@
 .slider::before,
 .slider::after {
   content: "";
-  height: 420px;
-  width: 530px;
+  /* height: 420px;
+  width: 530px; */
   position: absolute;
   z-index: 2;
 }
@@ -38,8 +39,8 @@
   width: calc(250px * 14);
 }
 .slide {
-  height: 420px;
-  width: 530px;
+  /* height: 420px;
+  width: 530px; */
   overflow: hidden;
   margin: 0 auto;
 }

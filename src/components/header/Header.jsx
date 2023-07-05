@@ -13,8 +13,8 @@ const Header = ({ refOf }) => {
           Kurapika <span>&</span> Alluka
         </h1>
         <img className={styles.icon} src={headerIcon} alt="icon" />
-        <p>Are getting Married</p>
-        <span> in Event Started!</span>
+        <p>Мы с радостью приглашаем вас разделить с нами наш</p>
+        <span> самый особый день - день нашей свадьбы!</span>
       </div>
     </main>
   );
