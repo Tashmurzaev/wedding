@@ -41,7 +41,7 @@ const Header = ({ refOf }) => {
           alt="icon"
         />
         <motion.h1 variants={animationRef.current} custom={6}>
-          Kurapika <span>&</span> Alluka
+          Ийгилик <span>&</span> Гулбарчын
         </motion.h1>
         <motion.img
           variants={animationRef.current}

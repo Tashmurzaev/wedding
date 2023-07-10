@@ -1,37 +1,64 @@
-import React from "react";
+import React, { useRef } from "react";
 import Title from "../title/Title";
-import { Map, Placemark, YMaps } from "react-yandex-maps";
+import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
 import styles from "./Location.module.css";
+import { motion } from "framer-motion";
 
 const Location = () => {
+  const componentAnimationRef = useRef({
+    hidden: {
+      x: -100,
+      opacity: 0,
+      transition: { y: { stiffness: 1000 } },
+    },
+    visible: (custom) => ({
+      x: 0,
+      opacity: 1,
+      transition: {
+        delay: custom * 0.2,
+        y: { stiffness: 1000, velocity: -100 },
+      },
+    }),
+  });
   return (
-    <section className={styles.container}>
-      <Title h2="Location" />
-      <div className={styles.mapContainer}>
+    <motion.section
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.1 }}
+      className={styles.container}
+    >
+      <motion.div variants={componentAnimationRef.current} custom={1}>
+        <Title h2="Расположение" />
+      </motion.div>
+      <motion.div
+        variants={componentAnimationRef.current}
+        custom={2}
+        className={styles.mapContainer}
+      >
         <YMaps>
           <Map
             // onLoad={() => setIsLoadingMap(true)}
             className={styles.map}
             defaultState={{
-              center: [42.82368, 74.618101],
-              zoom: 17,
+              center: [41.264139, 74.955991],
+              zoom: 15,
             }}
             style={{ border: "1px solid silver" }}
           >
-            <Placemark
-              geometry={[42.82368, 74.618101]}
-              properties={{
-                iconContent: "Kaynar Banquet Hall",
-              }}
-              options={{
-                preset: "islands#blackStretchyIcon",
-                // draggable: false,
-              }}
-            />
+            {/* <Placemark
+              // geometry={[41.264139, 74.955991]}
+              // properties={{
+              //   iconContent: "Kaynar Banquet Hall",
+              // }}
+              // options={{
+              //   preset: "islands#blackStretchyIcon",
+              //   // draggable: false,
+              // }}
+            /> */}
           </Map>
         </YMaps>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 };
 

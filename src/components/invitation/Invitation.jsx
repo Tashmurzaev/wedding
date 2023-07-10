@@ -25,11 +25,12 @@ const Invitation = () => {
     <motion.section
       initial="hidden"
       whileInView="visible"
+      viewport={{ once: true, amount: 0.1 }}
       className={cl.container}
     >
       <div className={cl.overlay} />
       <motion.div variants={componentAnimationRef.current} custom={1}>
-        <Title style={{ color: "#fff" }} h2="Invitation" />
+        <Title style={{ color: "#fff" }} h2="Приглашение" />
       </motion.div>
       <div className={cl.innerContainer}>
         <motion.div
@@ -49,15 +50,16 @@ const Invitation = () => {
           className={cl.leftSide}
         >
           <h2>
-            Kurapika <small>&amp;</small> Alluka
+            Ийгилик <small>&amp;</small> Гулбарчын
           </h2>
-          <p>Счастливо приглашаем вас на нашу свадьбу!</p>
+          <p> приглашаем вас на нашу свадьбу!</p>
 
           <div className={cl.date}>
-            Jule 24, 2023<small>at 06:00 pm</small>
+            22-июль, 2023<small>в 18:00</small>
           </div>
           <div className={cl.uppercase}>
-            Kaynar, банкетный <br /> зал, Сухэ-Батора, 1/2, Бишкек
+            Карабагыш-Ата ресторан, <br />
+            Село Баетово, Нарын
           </div>
           <h5>Последующий прием</h5>
         </motion.div>

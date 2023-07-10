@@ -9,6 +9,7 @@ import slide5 from "../../assets/img/3.png";
 import slide3 from "../../assets/img/1.jpg";
 // import slide6 from "../../assets/img/gallery-img3.jpeg";
 import slide6 from "../../assets/img/1.jpg";
+import image from "../../assets/icons/flower-large.svg";
 import Title from "../title/Title";
 import { motion } from "framer-motion";
 
@@ -33,6 +34,7 @@ const Gallery = ({ refOf }) => {
     <motion.div
       initial="hidden"
       whileInView="visible"
+      viewport={{ once: true }}
       // variants={componentAnimationRef.current}
       // viewport={{ once: false }}
       // custom={1}
@@ -43,7 +45,8 @@ const Gallery = ({ refOf }) => {
         ref={refOf}
         style={{ marginTop: "130px", marginBottom: "100px" }}
       >
-        <Title h2="Wedding Gallery" />
+        <Title h2="Свадебная галерея" />
+        <img className={cl.icon} src={image} alt="flower" />
       </motion.div>
       <section className={cl.slider}>
         <div className={cl.slideTrack}>

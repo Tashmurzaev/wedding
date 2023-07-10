@@ -52,7 +52,14 @@
 .slide:hover img {
   transform: scale(1.7);
 }
-
+.icon {
+  position: absolute;
+  right: 0px;
+  top: 760px;
+  width: 30%;
+  z-index: 1;
+  transform: rotate(90deg);
+}
 @media (max-width: 768px) {
   .slider {
     width: 100%;

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
 import { MobileNavbar } from "./mobileNavbar/MobileNavbar";
+import logo from "../../assets/icons/logo.jpeg";
 
 const Navbar = ({ scroll }) => {
   const [scrolled, setScrolled] = useState(false);
@@ -27,7 +28,7 @@ const Navbar = ({ scroll }) => {
     <>
       <div className={styles.div}>
         <header className={scrolled ? `${styles.scrolled}` : ""}>
-          <h1>Logo</h1>
+          <h1>Wedding</h1>
           <MobileNavbar
             openHandler={nav}
             closeHandler={navBarHandler}
