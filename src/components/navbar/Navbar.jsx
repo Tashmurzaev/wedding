@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
 import { MobileNavbar } from "./mobileNavbar/MobileNavbar";
-import logo from "../../assets/icons/logo.jpeg";
+import logo from "../../assets/icons/arch.png";
 
 const Navbar = ({ scroll }) => {
   const [scrolled, setScrolled] = useState(false);
@@ -28,7 +28,7 @@ const Navbar = ({ scroll }) => {
     <>
       <div className={styles.div}>
         <header className={scrolled ? `${styles.scrolled}` : ""}>
-          <h1>Wedding</h1>
+          <img className={styles.logo} src={logo} alt="" />
           <MobileNavbar
             openHandler={nav}
             closeHandler={navBarHandler}
@@ -44,31 +44,25 @@ const Navbar = ({ scroll }) => {
                 onClick={() => scroll("component1")}
                 className={styles.navMenu}
               >
-                Main
+                главнaя
               </li>
               <li
                 onClick={() => scroll("component2")}
                 className={styles.navMenu}
               >
-                The wedding
+                галерея
               </li>
               <li
                 onClick={() => scroll("component3")}
                 className={styles.navMenu}
               >
-                gallery
+                Приглашение
               </li>
               <li
                 className={styles.navMenu}
                 onClick={() => scroll("component4")}
               >
-                Videos
-              </li>
-              <li
-                className={styles.navMenu}
-                onClick={() => scroll("component5")}
-              >
-                contacts
+                Расположение
               </li>
             </ul>
           </nav>

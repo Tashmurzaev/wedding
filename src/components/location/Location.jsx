@@ -4,7 +4,7 @@ import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
 import styles from "./Location.module.css";
 import { motion } from "framer-motion";
 
-const Location = () => {
+const Location = ({ refOf }) => {
   const componentAnimationRef = useRef({
     hidden: {
       x: -100,
@@ -26,6 +26,7 @@ const Location = () => {
       whileInView="visible"
       viewport={{ once: true, amount: 0.1 }}
       className={styles.container}
+      ref={refOf}
     >
       <motion.div variants={componentAnimationRef.current} custom={1}>
         <Title h2="Расположение" />

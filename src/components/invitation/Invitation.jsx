@@ -4,7 +4,7 @@ import Title from "../title/Title";
 import invitation from "../../assets/icons/invitation.svg";
 import { motion } from "framer-motion";
 
-const Invitation = () => {
+const Invitation = ({ refOf }) => {
   const componentAnimationRef = useRef({
     hidden: {
       x: -100,
@@ -27,6 +27,7 @@ const Invitation = () => {
       whileInView="visible"
       viewport={{ once: true, amount: 0.1 }}
       className={cl.container}
+      ref={refOf}
     >
       <div className={cl.overlay} />
       <motion.div variants={componentAnimationRef.current} custom={1}>
@@ -61,7 +62,7 @@ const Invitation = () => {
             Карабагыш-Ата ресторан, <br />
             Село Баетово, Нарын
           </div>
-          <h5>Последующий прием</h5>
+          {/* <h5>Последующий прием</h5> */}
         </motion.div>
       </div>
     </motion.section>

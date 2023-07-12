@@ -1,14 +1,12 @@
 import React, { useRef } from "react";
 import cl from "./Gallery.module.css";
-import slide1 from "../../assets/img/flower.jpeg";
-import slide4 from "../../assets/img/flower4.webp";
-import slide2 from "../../assets/img/gallery-img2.jpeg";
-// import slide5 from "../../assets/img/gallery-img2.jpeg";
-import slide5 from "../../assets/img/3.png";
-// import slide3 from "../../assets/img/gallery-img3.jpeg";
-import slide3 from "../../assets/img/1.jpg";
-// import slide6 from "../../assets/img/gallery-img3.jpeg";
-import slide6 from "../../assets/img/1.jpg";
+import slide1 from "../../assets/img/igl2.jpeg";
+import slide2 from "../../assets/img/flower.jpeg";
+import slide3 from "../../assets/img/igl4.jpeg";
+import slide4 from "../../assets/img/igl1.jpeg";
+import slide5 from "../../assets/img/flower.jpeg";
+import slide6 from "../../assets/img/igl3.jpeg";
+import slide7 from "../../assets/img/gallery-img2.jpeg";
 import image from "../../assets/icons/flower-large.svg";
 import Title from "../title/Title";
 import { motion } from "framer-motion";
@@ -92,9 +90,9 @@ const Gallery = ({ refOf }) => {
           >
             <img className={cl.img} src={slide6} alt="img" />
           </motion.div>
-          {/* <div className={cl.slide}>
+          <div className={cl.slide}>
             <img className={cl.img} src={slide7} alt="img" />
-          </div> */}
+          </div>
           <motion.div
             variants={componentAnimationRef.current}
             custom={9}
@@ -137,9 +135,9 @@ const Gallery = ({ refOf }) => {
           >
             <img className={cl.img} src={slide6} alt="img" />
           </motion.div>
-          {/* <div className={cl.slide}>
+          <div className={cl.slide}>
             <img className={cl.img} src={slide7} alt="img" />
-          </div> */}
+          </div>
         </div>
       </section>
     </motion.div>
