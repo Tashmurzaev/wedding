@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/wedding/static/css/main.e0fa1330.css",
+    "main.js": "/wedding/static/js/main.dfbe6430.js",
+    "static/js/787.b444d40d.chunk.js": "/wedding/static/js/787.b444d40d.chunk.js",
+    "static/media/video3.mp4": "/wedding/static/media/video3.02075ced52c640cb324d.mp4",
+    "static/media/invitation-background.jpeg": "/wedding/static/media/invitation-background.13905f3fcbacd08352c5.jpeg",
+    "static/media/gallery-img2.jpeg": "/wedding/static/media/gallery-img2.5a3975d2a66afe167553.jpeg",
+    "static/media/flower.jpeg": "/wedding/static/media/flower.7e43dc3d3273a737a144.jpeg",
+    "static/media/flower-large.svg": "/wedding/static/media/flower-large.88cf2b87f98876c7f59ece9db11db362.svg",
+    "static/media/igl2.jpeg": "/wedding/static/media/igl2.48174ddb67213147e8b8.jpeg",
+    "static/media/igl4.jpeg": "/wedding/static/media/igl4.69cf88f2a41e9a044b4f.jpeg",
+    "static/media/igl3.jpeg": "/wedding/static/media/igl3.fdfe4191b01f3f1aab61.jpeg",
+    "static/media/igl1.jpeg": "/wedding/static/media/igl1.7410476dd6e594592823.jpeg",
+    "static/media/arch.png": "/wedding/static/media/arch.e2c009b183f0cd71ff1f.png",
+    "static/media/invitation.svg": "/wedding/static/media/invitation.0b1d8ec7deb1874891296c1376cf02d2.svg",
+    "static/media/invitationFooter.svg": "/wedding/static/media/invitationFooter.d1f08145e39a654e7981fe8007a61c61.svg",
+    "static/media/headerIcon.svg": "/wedding/static/media/headerIcon.35a0ef9a243b8eae732a55cdb113dbf6.svg",
+    "static/media/headerIcon2.svg": "/wedding/static/media/headerIcon2.d687cb30e520b426ef19.svg",
+    "index.html": "/wedding/index.html",
+    "static/media/titleIcon.svg": "/wedding/static/media/titleIcon.9093966d08641e911df181807a4562aa.svg",
+    "main.e0fa1330.css.map": "/wedding/static/css/main.e0fa1330.css.map",
+    "main.dfbe6430.js.map": "/wedding/static/js/main.dfbe6430.js.map",
+    "787.b444d40d.chunk.js.map": "/wedding/static/js/787.b444d40d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e0fa1330.css",
+    "static/js/main.dfbe6430.js"
+  ]
+}
