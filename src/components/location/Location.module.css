@@ -1,0 +1,23 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+.mapContainer {
+  margin-top: 80px;
+  border: 1px solid silver;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  border-radius: 10px;
+  border: none;
+}
+.map {
+  width: 100%;
+  height: 600px;
+  border-radius: 10px;
+}

@@ -1,37 +1,71 @@
-import React from "react";
+import React, { useRef } from "react";
 import cl from "./Invitation.module.css";
 import Title from "../title/Title";
 import invitation from "../../assets/icons/invitation.svg";
+import { motion } from "framer-motion";
 
-const Invitation = () => {
+const Invitation = ({ refOf }) => {
+  const componentAnimationRef = useRef({
+    hidden: {
+      x: -100,
+      opacity: 0,
+      transition: { y: { stiffness: 1000 } },
+    },
+    visible: (custom) => ({
+      x: 0,
+      opacity: 1,
+      transition: {
+        delay: custom * 0.2,
+        y: { stiffness: 1000, velocity: -100 },
+      },
+    }),
+  });
+
   return (
-    <section className={cl.container}>
+    <motion.section
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.1 }}
+      className={cl.container}
+      ref={refOf}
+    >
       <div className={cl.overlay} />
-      <Title style={{ color: "#fff" }} h2="Invitation" />
+      <motion.div variants={componentAnimationRef.current} custom={1}>
+        <Title style={{ color: "#fff" }} h2="Приглашение" />
+      </motion.div>
       <div className={cl.innerContainer}>
-        <div className={cl.rightSide}>
+        <motion.div
+          variants={componentAnimationRef.current}
+          custom={2}
+          className={cl.rightSide}
+        >
           <img className={cl.img} src={invitation} alt="invitation" />
-          <p>Save </p>
-          <span> THE</span>
-          <p>Date</p>
+          <p>Сохраните </p>
+          <span> эту</span>
+          <p>Дату! </p>
           <img className={cl.img2} src={invitation} alt="invitation" />
-        </div>
-        <div className={cl.leftSide}>
+        </motion.div>
+        <motion.div
+          variants={componentAnimationRef.current}
+          custom={3}
+          className={cl.leftSide}
+        >
           <h2>
-            Kurapika <small>&amp;</small> Alluka
+            Ийгилик <small>&amp;</small> Гулбарчын
           </h2>
-          <p>Request the honor of your presence on their wedding day</p>
+          <p> приглашаем вас на нашу свадьбу!</p>
 
           <div className={cl.date}>
-            Jule 24, 2023<small>at 06:00 pm</small>
+            22-июль, 2023<small>в 18:00</small>
           </div>
           <div className={cl.uppercase}>
-            Kaynar, банкетный <br /> зал, Сухэ-Батора, 1/2, Бишкек
+            Карабагыш-Ата ресторан, <br />
+            Село Баетово, Нарын
           </div>
-          <h5>Reception to follow</h5>
-        </div>
+          {/* <h5>Последующий прием</h5> */}
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

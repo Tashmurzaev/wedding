@@ -43,19 +43,16 @@ export const MobileNavbar = ({ openHandler, closeHandler, scroll }) => {
           <div className={styles.links}>
             <div className={styles.linkBox}>
               <div className={styles.links_title}>
-                <p onClick={() => scroll("component1")}> Main</p>
+                <p onClick={() => scroll("component1")}> главнaя</p>
               </div>
               <div className={styles.links_title}>
-                <p onClick={() => scroll("component2")}> About</p>
+                <p onClick={() => scroll("component2")}> галерея</p>
               </div>
               <div className={styles.links_title}>
-                <p onClick={() => scroll("component3")}>Contacts</p>
+                <p onClick={() => scroll("component3")}>Приглашение</p>
               </div>
               <div className={styles.links_title}>
-                <p onClick={() => scroll("component4")}>Photos</p>
-              </div>
-              <div className={styles.links_title}>
-                <p onClick={() => scroll("component5")}>Videos</p>
+                <p onClick={() => scroll("component4")}>Расположение</p>
               </div>
             </div>
           </div>
